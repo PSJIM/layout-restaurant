@@ -1,0 +1,108 @@
+/* font imports */
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap');
+/* css variables */
+:root{
+    --gold: #dab33e;
+    --white: #FFF;
+    --black: #000;
+}
+/* body section */
+body{
+    margin: 0px;
+}
+/* header section */
+header{
+    height: 110px;
+    width: 100vw;
+    min-width: 1600px;
+    display: flex;
+    box-sizing: border-box;
+    padding-left: 14%;
+    padding-right: 14%;
+    justify-content: space-between;
+    z-index: 1;
+    position: fixed;
+    top: 0px;
+    color: var(--white)
+}
+header h3{
+    font-family: 'Yeseva One', cursive;
+    font-size: 36px;
+}
+.navbarcontainer{
+    display: flex;
+    padding-right: 40px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 21px;
+    height: 110px;
+}
+.navbar > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.socialMedia{
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--gold);
+}
+/* main settings */
+main{
+    position: absolute;
+    top: 0px;
+}
+/* home section */
+.home{
+    background-image: url(./img/bgimg/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-width: 1600px;
+    height: 750px;
+}
+/* about section */
+.about{
+    background-image: url(./img/bgimg/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-width: 1600px;
+    height: 710px;
+}
+/* ingredients section */
+.ingredients{
+    background-image: url(./img/bgimg/ingredients.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-width: 1600px;
+    height: 758px;
+}
+/* menu section */
+.menu{
+    background-image: url(./img/bgimg/menu.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-width: 1600px;
+    height: 990px;
+}
+/* reviews section */
+.reviews{
+    background-image: url(./img/bgimg/reviews.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-width: 1600px;
+    height: 758px;
+}
