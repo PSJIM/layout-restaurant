@@ -1,29 +1,32 @@
 /* font imports */
 @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 /* css variables */
 :root{
     --gold: #dab33e;
     --white: #FFF;
     --black: #000;
+    --footer: #191919;
 }
 /* body section */
 body{
     margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 /* header section */
 header{
     height: 110px;
-    width: 100vw;
-    min-width: 1600px;
+    width: 1150px;
     display: flex;
     box-sizing: border-box;
-    padding-left: 14%;
-    padding-right: 14%;
     justify-content: space-between;
     z-index: 1;
     position: fixed;
-    top: 0px;
+    float: left;
     color: var(--white)
 }
 header h3{
@@ -69,6 +72,52 @@ main{
     width: 100vw;
     min-width: 1600px;
     height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.homeContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'yeseva one', cursive;
+    font-size: 90px;
+    color: var(--white);
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0px;
+    margin-top: 90px;
+}
+.home img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.buttonsContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+}
+.buttonsContainer > *{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: var(--white);
+    width: 228px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bookButton{
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid black;
+}
+.menuButton{
+    background-color: rgba(255, 255, 255, 0.4);
+    border: 1px solid white;
 }
 /* about section */
 .about{
@@ -78,6 +127,37 @@ main{
     width: 100vw;
     min-width: 1600px;
     height: 710px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.aboutDescriptionContainer{
+    width: 432px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.about h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--gold);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.about p{
+    font-family: 'lato', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+.about img:last-of-type{
+    position: relative;
+    left: 40px;
 }
 /* ingredients section */
 .ingredients{
@@ -86,7 +166,45 @@ main{
     background-size: cover;
     width: 100vw;
     min-width: 1600px;
-    height: 758px;
+    height: 760px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 560px 100px;
+}
+.ingredientsDescriptionContainer{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 590px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ingredientsDescriptionContainer h3{
+    font-family: 'Yeseva One', cursive;
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--white);
+    margin: 0px 0px;
+}
+.ingredientsDescriptionContainer img{
+    margin: 20px 15px;
+}
+.ingredientsDescriptionContainer p{
+    font-family: 'lato', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    width: 430px;
+    color: var(--white);
+}
+.ingredientContainer{
+    margin: 20px 0px;
+}
+.ingredientContainer img{
+    width: 100px;
 }
 /* menu section */
 .menu{
@@ -105,4 +223,22 @@ main{
     width: 100vw;
     min-width: 1600px;
     height: 758px;
+}
+/* reservations section */
+.reservations{
+    background-image: url(./img/bgimg/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-width: 1600px;
+    height: 700px;
+}
+/* footer section */
+footer{
+    width: 100vw;
+    min-width: 1600px;
+    height: 300px;
+    background-color: var(--footer);
+    position: relative;
+    top: 4666px;
 }
