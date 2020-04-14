@@ -17,26 +17,27 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: flex-end;
+    background-color: #eee;
 }
 /* global styles */
-a:link, a:visited{
-    color: var(--white);
-}
-a:hover{
-    color: gainsboro;
-}
+
+
 /* header section */
 header{
     height: 110px;
-    width: 1150px;
+    width: 1600px;
     display: flex;
     box-sizing: border-box;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 10;
     position: fixed;
+    top: 0px;
+    padding-left: 175px;
+    padding-right: 215px;
     float: left;
-    color: var(--white)
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,0.7) 0%, rgba(250,250,250,0) 100%);
 }
 header h1{
     font-family: 'Yeseva One', cursive;
@@ -44,6 +45,7 @@ header h1{
     margin: 0px;
     display: flex;
     align-items: center;
+    color: var(--white)
 }
 .navbarcontainer{
     display: flex;
@@ -52,17 +54,23 @@ header h1{
 .navbar{
     display: flex;
     justify-content: space-between;
-    font-family: 'Gentium Book Basic', serif;
-    font-size: 21px;
     height: 110px;
 }
-.navbar > *{
+.navbar button{
     display: flex;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     padding-left: 25px;
     padding-right: 25px;
+    background-color: rgba(0,0,0,0);
+    font-family: 'Gentium Book Basic', serif;
+    font-size: 21px;
+    color: var(--white);
+    border: 0px;
+}
+.navbar button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
 }
 .socialMedia{
     width: 75px;
@@ -70,24 +78,28 @@ header h1{
     justify-content: space-between;
     align-items: center;
 }
-header a:link, a:visited{
+.headerLink:link, .headerLink:visited{
     color: var(--gold)
 }
-header a:hover{
+.headerLink:hover{
     color: goldenrod;
 }
 
 /* main settings */
 main{
     position: absolute;
+    min-height: 100vh;
     top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 /* home section */
 .home{
     background-image: url(./img/bgimg/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 1600px;
     min-width: 1600px;
     height: 750px;
     display: flex;
@@ -133,22 +145,30 @@ h2{
     background-color: rgba(0, 0, 0, 0.6);
     border: 1px solid black;
 }
+.bookButton:hover{
+    background-color: #000;
+}
 .menuButton{
     background-color: rgba(255, 255, 255, 0.4);
     border: 1px solid white;
+}
+.menuButton:hover{
+    background-color: rgba(255,255,255,0.8);
+    color: #000;
 }
 /* about section */
 .about{
     background-image: url(./img/bgimg/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 1600px;
     min-width: 1600px;
     height: 710px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .aboutDescriptionContainer{
     width: 432px;
@@ -182,7 +202,7 @@ h2{
     background-image: url(./img/bgimg/ingredients.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 1600px;
     min-width: 1600px;
     height: 760px;
     display: grid;
@@ -199,6 +219,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .ingredientsDescriptionContainer h3{
     font-family: 'Yeseva One', cursive;
@@ -223,13 +244,16 @@ h2{
 }
 .ingredientContainer img{
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(150,150,150, 0.3);
 }
 /* menu section */
 .menu{
     background-image: url(./img/bgimg/menu.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 1600px;
     min-width: 1600px;
     height: 990px;
     display: flex;
@@ -244,7 +268,7 @@ h2{
     justify-content: space-around;
     width: 430px;
     box-sizing: border-box;
-    margin: 0px 85px;
+    margin: 0px 65px 0px 65px;
 }
 .menuTitle h3{
     font-family: 'Yeseva One', cursive;
@@ -302,7 +326,7 @@ h2{
     background-image: url(./img/bgimg/reviews.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 1600px;
     min-width: 1600px;
     height: 758px;
     display: grid;
@@ -318,6 +342,7 @@ h2{
     align-items: center;
     justify-content: space-around;
     padding: 50px 40px;
+    overflow: hidden;
 }
 .reviewWraper h3{
     font-family: 'Yeseva One', cursive;
@@ -358,7 +383,7 @@ h2{
     background-image: url(./img/bgimg/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    width: 1600px;
     min-width: 1600px;
     height: 700px;
     display: grid;
@@ -384,6 +409,7 @@ h2{
     align-items: center;
     justify-content: space-between;
     margin: auto 0;
+    overflow: hidden;
 }
 form{
     display: flex;
@@ -447,14 +473,8 @@ input:valid, select:valid{
     z-index: 1;
     color: #7c7c7c;
 }
-::-webkit-calendar-picker-indicator:hover{
+::-webkit-calendar-picker-indicator:hover, ::-webkit-calendar-picker-indicator{
     background-color: rgba(0,0,0,0);
-    opacity 0;
-    z-index: 10;
-}
-::-webkit-calendar-picker-indicator{
-    color: rgba(0,0,0,0);
-    opacity 0;
     z-index: 10;
 }
 input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-outer-spin-button{
@@ -477,15 +497,14 @@ input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-outer-spi
 }
 /* footer section */
 footer{
-    width: 100vw;
+    width: 1600px;
     min-width: 1600px;
     height: 300px;
     background-color: var(--footer);
-    position: relative;
-    top: 4666px;
     display: grid;
     grid-template-columns: 215fr 360fr 100fr 230fr 170fr 230fr 270fr;
     grid-template-rows: 1fr 4fr 1fr;
+
 }
 .footerDescription{
     grid-row-start: 2;
@@ -529,6 +548,12 @@ footer p{
 }
 .iconWrapper i{
     margin: 0px 5px;
+}
+.footerLink:link, .footerLink:visited{
+    color: var(--white);
+}
+.iconWrapper a:hover{
+    color: gainsboro;
 }
 .location{
     grid-row-start: 2;

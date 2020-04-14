@@ -1,88 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paweł Stolarz">
     <meta name="keywords" content="html, css, rsschool, restaurant menu">
-    <link rel="stylesheet" type="text/css" href="./styles.css">
-    <link rel="stylesheet" type="text/css" href="./fontawesome.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/fontawesome.css">
     <title>Lambda Restaurant</title>
 </head>
+
 <body>
     <header>
         <h1>LAMBDA</h1>
         <div class="navbarcontainer">
-            <div class="navbar">
-                <div>
+            <nav class="navbar">
+                <button type="button" onclick="location.href='#home'">
                     Home
-                </div>
-                <div>
+                </button>
+                <button type="button" onclick="location.href='#about'">
                     About
-                </div>
-                <div>
+                </button>
+                <button type="button" onclick="location.href='#ingredients'">
                     Ingredients
-                </div>
-                <div>
+                </button>
+                <button type="button" onclick="location.href='#menu'">
                     Menu
-                </div>
-                <div>
+                </button>
+                <button type="button" onclick="location.href='#reviews'">
                     Reviews
-                </div>
-                <div>
+                </button>
+                <button type="button" onclick="location.href='#reservations'">
                     Reservations
-                </div>
-            </div>
+                </button>
+            </nav>
             <div class="socialMedia">
                 <div class="twitter">
-                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://twitter.com" class="headerLink"><i class="fab fa-twitter"></i></a>
                 </div>
                 <div class="youtube">
-                    <a href="https://youtube.com"><i class="fab fa-youtube-square"></i></a>
+                    <a href="https://youtube.com" class="headerLink"><i class="fab fa-youtube-square"></i></a>
                 </div>
                 <div class="facebook">
-                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.facebook.com" class="headerLink"><i class="fab fa-facebook-f"></i></a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <div class="home">
+        <div class="home" id="home">
             <h2>the right ingredients <br>
                 for the right food</h2>
             <img src="./img/Decoration.png" alt="decorator" width="200px"></img>
             <div class="buttonsContainer">
-                <div class="bookButton">
+                <button class="bookButton" type="button" onclick="location.href='#reservations'">
                     BOOK A TABLE
-                </div>
-                <div class="menuButton">
+                </button>
+                <button class="menuButton" type="button" onclick="location.href='#menu'">
                     SEE THE MENU
-                </div>
+                </button>
             </div>
         </div>
-        <div class="about">
+        <div class="about" id="about">
             <div class="aboutDescriptionContainer">
                 <h3>Just the right food</h3>
                 <img src="./img/about_Decoration.png" alt="decorator" width="247px">
-                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!</p>
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
+                    back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and
+                    gourmet coffees make us hard to resist! Stop in today and check us out! </p>
                 <img src="./img/about_chef.png" alt="chef image with his signature" width="219px">
             </div>
             <img src="./img/about_plate.png" alt="plate with some tasty food">
         </div>
-        <div class="ingredients">
+        <div class="ingredients" id="ingredients">
             <div class="ingredientsDescriptionContainer">
                 <h3>Fine ingredients</h3>
                 <img src="./img/ingredients_Decoration.png" alt="decorator" width="247px">
-                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+                <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming
+                    back for more. Perfect materials and freshly baked food, delicious Lambda cakes, muffins, and
+                    gourmet coffees make us hard to resist! Stop in today and check us out!
                 </p>
                 <div class="ingredientContainer">
-                    <img src="./img/ingredient1.png" alt="wheat">
-                    <img src="./img/ingredient2.png" alt="tomatoes (maybe)">
-                    <img src="./img/ingredient3.png" alt="bread">
+                    <img src="./img/ingredient-1.jpg" alt="wheat">
+                    <img src="./img/ingredient-2.jpg" alt="tomatoes (maybe)">
+                    <img src="./img/ingredient-3.jpg" alt="bread">
                 </div>
             </div>
         </div>
-        <div class="menu">
+        <div class="menu" id="menu">
             <div class="menuColumn">
                 <div class="menuTitle">
                     <h3>Appetisers</h3>
@@ -194,21 +200,21 @@
                 </div>
             </div>
         </div>
-        <div class="reviews">
+        <div class="reviews" id="reviews">
             <div class="reviewWraper">
                 <h3>Guest Reviews</h3>
                 <img src="./img/ingredients_Decoration.png" alt="white page decorator" width="247px">
                 <p>
-                If you’ve been to one of our restaurants, you’ve seen – <br> 
-                and tasted – what keeps our customers coming back for <br>
-                more. Perfect materials and freshly baked food, <br>
-                delicious Lambda cakes,  muffins, and gourmet coffees <br>
-                make us hard to resist! Stop in today and check us out!
+                    If you’ve been to one of our restaurants, you’ve seen – <br>
+                    and tasted – what keeps our customers coming back for <br>
+                    more. Perfect materials and freshly baked food, <br>
+                    delicious Lambda cakes, muffins, and gourmet coffees <br>
+                    make us hard to resist! Stop in today and check us out!
                 </p>
                 <p>- food inc, New York</p>
             </div>
         </div>
-        <div class="reservations">
+        <div class="reservations" id="reservations">
             <div class="reservationPictureContainer">
                 <img src="./img/disgusting_food.jpg" alt="I have no idea whats that and it looks disgusting">
                 <img src="./img/yummy_food.jpg" alt="Looks yummy!">
@@ -217,11 +223,11 @@
                 <div class="reservationsContainer">
                     <h3>Just the right food</h3>
                     <img src="./img/about_Decoration.png" alt="page decorator">
-                    <p>If you’ve been to one of our restaurants, you’ve seen – and 
-                        tasted – what keeps our customers coming back for more. 
+                    <p>If you’ve been to one of our restaurants, you’ve seen – and
+                        tasted – what keeps our customers coming back for more.
                         Perfect materials and freshly baked food.</p>
-                    <p>Delicious Lambda cakes,  muffins, and gourmet coffees make 
-                        us hard to resist! Stop in today and check us out! 
+                    <p>Delicious Lambda cakes, muffins, and gourmet coffees make
+                        us hard to resist! Stop in today and check us out!
                         Perfect materials and freshly baked food.</p>
                     <form action="/reservation-api-request" method="POST">
                         <div class="formInput">
@@ -234,7 +240,8 @@
                         </div>
                         <div class="formInput">
                             <label for="date">Date</label>
-                            <input type="text" class="dateInput" name="reservation_date" placeholder="date *" required onfocus="(this.type='date')" onblur="(this.type='text')">
+                            <input type="text" class="dateInput" name="reservation_date" placeholder="date *" required
+                                onfocus="(this.type='date')" onblur="(this.type='text')">
                             <i class="far fa-calendar-alt"></i>
                         </div>
                         <div class="formInput">
@@ -254,42 +261,45 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="footerDescription">
+                <h5>About Us</h5>
+                <img src="./img/ingredients_Decoration.png" alt="white decorator" width="200px">
+                <p>Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek </b>patisserie,
+                    featuring breakfasts of fresh croissants and steaming bowls of café.<br>
+                    Lamda the best restaurant in town</p>
+            </div>
+            <div class="openingHours">
+                <h5>Opening Hours</h5>
+                <img src="./img/ingredients_Decoration.png" alt="white decorator" width="200px">
+                <div class="hoursWrapper">
+                    <p><b>Mon-Thu:</b> 7:00am-8:00pm <br></p>
+                    <p><b>Fri-Sun:</b> 7:00am-10:00pm</p>
+                </div>
+                <div class="iconWrapper">
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-discover"></i>
+                </div>
+            </div>
+            <div class="location">
+                <h5>Our Location</h5>
+                <img src="./img/ingredients_Decoration.png" alt="white decorator" width="200px">
+                <div class="addressWrapper">
+                    <b>
+                        <p>19th Paradise Street Sitia</p>
+                        <p>128 Meserole Avenue</p>
+                    </b>
+                </div>
+                <div class="iconWrapper">
+                    <a href="https://www.facebook.com" class="footerLink"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://youtube.com" class="footerLink"><i class="fab fa-youtube-square"></i></a>
+                    <a href="https://twitter.com" class="footerLink"><i class="fab fa-twitter"></i></a>
+                    <a href="https://trello.com" class="footerLink"><i class="fab fa-trello"></i></a>
+                </div>
+            </div>
+        </footer>
     </main>
-    <footer>
-        <div class="footerDescription">
-            <h5>About Us</h5>
-            <img src="./img/ingredients_Decoration.png" alt="white decorator" width="200px">
-            <p>Lambda's new and expanded Chelsea location represents a truly authentic <b>Greek </b>patisserie, featuring breakfasts of fresh croissants and steaming bowls of café.<br>
-                Lamda the best restaurant in town</p>
-        </div>
-        <div class="openingHours">
-            <h5>Opening Hours</h5>
-            <img src="./img/ingredients_Decoration.png" alt="white decorator" width="200px">
-            <div class="hoursWrapper">
-                <p><b>Mon-Thu:</b> 7:00am-8:00pm <br></p>
-                <p><b>Fri-Sun:</b> 7:00am-10:00pm</p>
-            </div>
-            <div class="iconWrapper">
-                <i class="fab fa-cc-amex"></i>
-                <i class="fab fa-cc-paypal"></i>
-                <i class="fab fa-cc-visa"></i>
-                <i class="fab fa-cc-discover"></i>
-            </div>
-        </div>
-        <div class="location">
-            <h5>Our Location</h5>
-            <img src="./img/ingredients_Decoration.png" alt="white decorator" width="200px">
-            <div class="addressWrapper">
-                <b><p>19th Paradise Street Sitia</p>
-                <p>128 Meserole Avenue</p></b>
-            </div>
-            <div class="iconWrapper">
-                <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://youtube.com"><i class="fab fa-youtube-square"></i></a>
-                <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
-                <a href="https://trello.com"><i class="fab fa-trello"></i></a>
-            </div>
-        </div>
-    </footer>
 </body>
 </html>
