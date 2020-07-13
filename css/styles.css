@@ -96,7 +96,7 @@ main{
 }
 /* home section */
 .home{
-    background-image: url(./img/bgimg/home.jpg);
+    background-image: url(/img/bgimg/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1600px;
@@ -158,7 +158,7 @@ h2{
 }
 /* about section */
 .about{
-    background-image: url(./img/bgimg/about.jpg);
+    background-image: url(/img/bgimg/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1600px;
@@ -199,7 +199,7 @@ h2{
 }
 /* ingredients section */
 .ingredients{
-    background-image: url(./img/bgimg/ingredients.jpg);
+    background-image: url(/img/bgimg/ingredients.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1600px;
@@ -250,7 +250,7 @@ h2{
 }
 /* menu section */
 .menu{
-    background-image: url(./img/bgimg/menu.jpg);
+    background-image: url(/img/bgimg/menu.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1600px;
@@ -323,7 +323,7 @@ h2{
 }
 /* reviews section */
 .reviews{
-    background-image: url(./img/bgimg/reviews.jpg);
+    background-image: url(/img/bgimg/reviews.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1600px;
@@ -380,7 +380,7 @@ h2{
 
 /* reservations section */
 .reservations{
-    background-image: url(./img/bgimg/about.jpg);
+    background-image: url(/img/bgimg/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 1600px;
