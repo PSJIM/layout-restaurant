@@ -1,6 +1,6 @@
-A RS.SCHOOL task = you can find the original repo here => https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markup-1.md
+### A RS.SCHOOL task = you can find the original repo here => https://github.com/rolling-scopes-school/tasks/blob/master/tasks/markup-1.md
 
-In this repo you can find a solution done by me to this task. 
+## In this repo you can find a solution done by me to this task. 
 
 
 # Homework: Layout(Restaurant)
